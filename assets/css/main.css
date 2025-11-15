@@ -1,0 +1,45 @@
+
+html, body{
+    height: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* ======================= General rules ============================= */
+
+.wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main.main {
+    flex: 1 1 auto;
+}
+
+/* ======================= Header rules ============================= */
+
+.navbar-brand img {
+    height: 25px; /* фиксированная высота */
+    width: auto;
+    object-fit: contain;
+}
+
+/* ======================= Main rules ============================= */
+.feature-img.img-fluid {
+    width: 100%;        /* растянуть по ширине колонки */
+    max-width: 480px;   /* но не больше 480px, чтобы не была огромной */
+}
+.story-content {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+    width: 85%;
+}
